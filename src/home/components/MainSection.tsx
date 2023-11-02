@@ -7,9 +7,9 @@ import {
 } from "@mui/material";
 
 const MainSection = () => {
-  const title = "Vos queres crecer.\n Nosotros te queremos ayudar";
+  const title = "j.\n ";
   const subtitle =
-    "Crea una web con plantillas impecables, fácil edición y sin codificación.";
+    "¡Usar roomsite es realmente sencillo! sigue estos tips para que tu experiencia sea realmente sensacional.";
   const sm = useMediaQuery("min-width(600px)");
 
   return (
@@ -26,7 +26,7 @@ const MainSection = () => {
         }}
         gridTemplateRows="auto"
         gridTemplateAreas={{
-          xs: "'.' '.' 'title' 'subtitle' 'btn'",
+          xs: "'.' '.' 'title' 'subtitle' 'btn' 'texto' 'textito'",
           sm: "'. img' 'title img' 'subtitle img' 'btn img' '. img'",
         }}
         columnGap={{
@@ -48,9 +48,8 @@ const MainSection = () => {
             sm: "left",
           }}
         >
-          <Typography variant={sm ? "h2" : "h3"} fontWeight="bold">
-            {title}
-          </Typography>
+          <img src="/edificios.jpg"  width="280" height="280" alt="Logo de HTML5"></img>
+
         </Box>
         <Box
           textAlign={{
@@ -76,7 +75,35 @@ const MainSection = () => {
             sm: "left",
           }}
         >
-          <Button variant="contained">Comienza a crear</Button>
+          <Button href="/login" variant="contained">Siguiente</Button>
+        </Box>
+        <Box
+          gridArea={"texto"}
+          alignSelf={{
+            xs: "start",
+            sm: "start",
+          }}
+          display={"flex"}
+          justifySelf={{
+            xs: "center",
+            sm: "left",
+          }}
+        >
+          <Typography variant="h6">¿no quieres ver esto?</Typography>
+        </Box>
+        <Box
+          gridArea={"textito"}
+          alignSelf={{
+            xs: "start",
+            sm: "start",
+          }}
+          display={"flex"}
+          justifySelf={{
+            xs: "center",
+            sm: "left",
+          }}
+        >
+          <Typography variant="h6">saltar</Typography>
         </Box>
 
         <Box

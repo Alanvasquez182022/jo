@@ -39,6 +39,7 @@ const Login = () => {
           Iniciar Sesion
         </Button>
       </Stack>
+      <Button variant="text">Text</Button>
     </Container>
   );
 };
