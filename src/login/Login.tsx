@@ -33,14 +33,17 @@ const Login = () => {
         <Button
           variant="contained"
           style={{
-            marginTop: "2rem",
+            marginTop: "1rem",
           }}
         >
-          Iniciar Sesion
+           <Button href="/plantillas" variant="contained">iniciar sesion</Button>
         </Button>
+        <Button variant="text">olvidaste tu contraseña</Button>
+        <Button variant="text">recuperarla</Button>
       </Stack>
-      <Button variant="text">Text</Button>
+      
     </Container>
+    
   );
 };
 
